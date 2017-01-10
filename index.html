@@ -3,51 +3,122 @@
 
 <head>
     <title>Page Title</title>
-    <script src=“../example.js”></script>
 </head>
 
 <body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<table border="1">
-	  <tr>
-		<th>Firstname</th>
-		<th>Lastname</th> 
-	  </tr>
-	  <tr>
-		<td>Jill</td>
-		<td>Smith</td>
-	  </tr>
-	  <tr>
-		<td>Eve</td>
-		<td>Jackson</td>
-	  </tr>
-	  <tr>
-		<td>John</td>
-		<td>Doe</td>
-	  </tr>
-	</table>
+    <section>
+		<aside>
+		  <h4>Epcot Center</h4>
+		  <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+		</aside>
+		
+		<section>
+			<article>
+			  <header>
+				<h1>Most important heading here</h1>
+				<h3>Less important heading here</h3>
+				<p>Some additional information here</p>
+			  </header>
+			  <p>Lorem Ipsum dolor set amet....</p>
+			</article>
+		</section>
+		
+		<section>
+			<table border="1">
+			  <caption>Table Caption</caption>
+			  <tr>
+				<th>Firstname</th>
+				<th>Lastname</th> 
+			  </tr>
+			  <tr>
+				<td>Jill</td>
+				<td>Smith</td>
+			  </tr>
+			  <tr>
+				<td colspan="2">Eve Jackson</td>
+			  </tr>
+			  <tr>
+				<td>John</td>
+				<td>Doe</td>
+			  </tr>
+			</table>
+		</section>
+		
+		<section>
+			<form action="form.php">
+					<header>
+						<h2>Employment Application</h2>
+					</header>
+
+					<label>First Name</label>
+					<input type="text" required autofocus placeholder="Please enter your name"/>
+					
+					<label>Middle Name</label>
+					<input type="text" disabled/>
+					
+					<label>Last Name</label>
+					<input type="text" value="Sharma" readonly/>
+					
+					<label>Designation</label>
+					<input type="text" value="Engi" max="4"/>
+					
+					<label>Age</label>
+					<input type="number" value="25" min="20" max="50" step="5"/>
+					
+					<label>
+						Which position are you applying for?
+					</label>
+
+					<select>
+						<option value="Interface Designer">
+							Interface Designer
+						</option>
+						<option value="Software Engineer">
+							Software Engineer
+						</option>
+						<option value="System Administrator">
+							System Administrator
+						</option>
+						<option value="Office Manager">
+							Office Manager
+						</option>
+					</select>
+					
+					<fieldset>
+						<legend>
+							Are you willing to relocate?
+							<span class="req">*</span>
+						</legend>
+						<input type="radio" class="field radio" value="Yes" >
+						<label>Yes</label>
+						<input type="radio" class="field radio" value="No" >
+						<label>No</label>
+					</fieldset>
+						
+					<label>Attach a Copy of Your Resume</label>
+					<input type="file">
+					
+					<textarea></textarea>
+
+					<button>Submit</button>
+				</form>
+		</section>
+	</section>
 	
-	<hr>
-	
-	<table border="1">
-	  <caption>Table Caption</caption>
-	  <tr>
-		<th>Firstname</th>
-		<th>Lastname</th> 
-	  </tr>
-	  <tr>
-		<td>Jill</td>
-		<td>Smith</td>
-	  </tr>
-	  <tr>
-		<td colspan="2">Eve Jackson</td>
-	  </tr>
-	  <tr>
-		<td>John</td>
-		<td>Doe</td>
-	  </tr>
-	</table>
-	 
+	<footer>
+	  <p>Footer Text</p>
+	</footer>
 </body>
 
 </html>
