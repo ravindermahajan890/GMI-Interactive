@@ -4,63 +4,67 @@
 <head>
     <title>Page Title</title>
     <script src=“../example.js”></script>
-
-    <style></style>
 </head>
 
 <body>
 
-    <h1>This is heading 1</h1>
+	<form action="form.php">
+		<header>
+			<h2>Employment Application</h2>
+		</header>
 
-    <hr>
+		<label>First Name</label>
+		<input type="text" required autofocus placeholder="=Enter your name"/>
+		
+		<label>Middle Name</label>
+		<input type="text" disabled/>
+		
+		<label>Last Name</label>
+		<input type="text" value="Sharma" readonly/>
+		
+		<label>Designation</label>
+		<input type="text" value="Engi" max="4"/>
+		
+		<label>Age</label>
+		<input type="number" value="25" min="20" max="50" step="5"/>
+		
+		<label>
+			Which position are you applying for?
+		</label>
 
-    <p>This is some text in a paragraph.</p>
+		<select>
+			<option value="Interface Designer">
+				Interface Designer
+			</option>
+			<option value="Software Engineer">
+				Software Engineer
+			</option>
+			<option value="System Administrator">
+				System Administrator
+			</option>
+			<option value="Office Manager">
+				Office Manager
+			</option>
+		</select>
+		
+		<fieldset>
+			<legend>
+				Are you willing to relocate?
+				<span class="req">*</span>
+			</legend>
+			<input type="radio" class="field radio" value="Yes" >
+			<label>Yes</label>
+			<input type="radio" class="field radio" value="No" >
+			<label>No</label>
+		</fieldset>
+			
+		<label>Attach a Copy of Your Resume</label>
+		<input type="file">
+		
+		<textarea></textarea>
 
-    <hr>
-
-    <pre>
-	Text in a pre element
-	is displayed in a fixed-width
-	font, and it preserves
-	both      spaces and
-	line breaks
-	</pre>
-
-    <hr>
-
-    <div>
-        <h3>This is a heading</h3>
-        <p>This is a paragraph.</p>
-    </div>
-
-    <hr>
-
-    <strong>Strong text</strong>
-
-    <hr>
-
-    <p>He named his car <i>The lightning</i>, because it was very fast.</p>
-
-    <hr>
-
-    <p>This text contains <sub>subscript</sub> text.</p>
-
-    <hr>
-
-    <p>This text contains <sup>superscript</sup> text.</p>
-
-    <hr>
-
-    <p>This is normal text - <b>and this is bold text</b>.</p>
-
-    <hr>
-
-    <a href="#" target="_blank">Anchor Link</a>
-
-    <hr>
-
-    <img src="http://www.sapientindiacareers.com/etc/designs/sapient/sic/_jcr_content/sapientHomePage/banner/logo.img.png/1455081600547.png"
-        alt="image" />
+		<button>Submit</button>
+	</form>
 
 </body>
 
