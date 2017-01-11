@@ -100,7 +100,7 @@
 		    border: 1px solid #ccc;
 		    padding: 10px;
 
-		    /* background */
+		    /* background image */
 		    //background-image: url(http://www.wallpapertycoon.com/wp-content/uploads/2016/02/beach_bridge_sunset_nature_wallpaper_hd-500x375.jpg), url(http://kingofwallpapers.com/sky/sky-003.jpg);
 		    //background-position: right bottom, left top;
     		//background-repeat: no-repeat, repeat;
@@ -109,6 +109,12 @@
 
     		//background-size: cover;
     		//background-size: 100px 80px;
+
+    		/* background Color */
+    		background-color:rgb(66, 155, 165);
+    		opacity: 0.6;
+    		//background-color:rgba(66, 155, 165, 0.32);
+
 		}
 		form fieldset {
 		    padding: 15px;
