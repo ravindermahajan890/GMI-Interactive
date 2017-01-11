@@ -20,6 +20,11 @@
 		#container > section {
 		    border-left: 1px solid #ccc;
 		}
+		header .profile {
+			float: right;
+			border-radius: 25px;
+			margin: 5px 10px 0px 0px
+		}
 		#sideBar {
 		    width: 20%;
 		    float: left;
@@ -95,7 +100,7 @@
 		    border: 1px solid #ccc;
 		    padding: 10px;
 
-		    /* background */
+		    /* background image */
 		    //background-image: url(http://www.wallpapertycoon.com/wp-content/uploads/2016/02/beach_bridge_sunset_nature_wallpaper_hd-500x375.jpg), url(http://kingofwallpapers.com/sky/sky-003.jpg);
 		    //background-position: right bottom, left top;
     		//background-repeat: no-repeat, repeat;
@@ -104,6 +109,35 @@
 
     		//background-size: cover;
     		//background-size: 100px 80px;
+
+    		/* background Color */
+    		//background-color:rgb(66, 155, 165);
+    		//opacity: 0.6;
+    		//background-color:rgba(66, 155, 165, 0.32);
+
+
+    		/* gradient */
+    		background: #7baeb4; /* For browsers that do not support gradients */
+		    background: -webkit-linear-gradient(#7baeb4, #fff); /* For Safari 5.1 to 6.0 */
+		    background: -o-linear-gradient(#7baeb4, #fff); /* For Opera 11.1 to 12.0 */
+		    background: -moz-linear-gradient(#7baeb4, #fff); /* For Firefox 3.6 to 15 */
+		    background: linear-gradient(#7baeb4, #fff); /* Standard syntax */
+
+
+		    /* gradient direction */
+		    //background: #7baeb4; /* For browsers that do not support gradients */
+		    //background: -webkit-linear-gradient(left, #7baeb4, #fff); /* For Safari 5.1 to 6.0 */
+		    //background: -o-linear-gradient(right, #7baeb4, #fff); /* For Opera 11.1 to 12.0 */
+		    //background: -moz-linear-gradient(right, #7baeb4, #fff); /* For Firefox 3.6 to 15 */
+		    //background: linear-gradient(to right, #7baeb4, #fff); /* Standard syntax */
+
+
+		    /* gradient radial */
+    		//background: #7baeb4; /* For browsers that do not support gradients */
+		    //background: -webkit-radial-gradient(#7baeb4, #fff, #7baeb4); /* For Safari 5.1 to 6.0 */
+		    //background: -o-radial-gradient(#7baeb4, #fff, #7baeb4); /* For Opera 11.1 to 12.0 */
+		    //background: -moz-radial-gradient(#7baeb4, #fff, #7baeb4); /* For Firefox 3.6 to 15 */
+		    //background: radial-gradient(#7baeb4, #fff, #7baeb4); /* Standard syntax */
 		}
 		form fieldset {
 		    padding: 15px;
