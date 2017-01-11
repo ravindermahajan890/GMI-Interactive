@@ -2,118 +2,155 @@
 <html>
 
 <head>
-    <title>Sapient GMI</title>
-	
+	<title>Sapient GMI</title>
+
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
-	
+
 	<style>
-		h1 {color: #00959e;}
+		* {box-sizing: border-box; margin: 0px; padding: 0px;}
+		body {
+			background-color: #f2f2f2;
+		}
+		
+		#container {overflow:hidden;}
+		#sideBar {width: 20%; float: left; padding: 1%; }
+		#contentCntr {width: 80%; float: right; padding: 1%; padding-left: 2%; border-left: 1px solid #ccc; }
+		
+		nav {padding: 10px; margin-bottom: 50px;}
+		.navList {display: inline; padding: 0px 10px; }
+		.anchor {color: #9d9d9d; text-decoration: none;}
+		
+		.tableWrapper {padding: 15px; padding-left: 0px;}
+		table{border: 1px solid #ccc;}
+		.tableHeader {background: #222222; color:#fff;}
+		.tableCell {padding: 5px;}
+		
+		form {border: 1px solid #ccc; padding: 10px; }
+		fieldset { padding: 15px; }
+		
+		h1 {border-bottom:1px solid #ccc;}
+		h2 {border-bottom:1px solid #ccc; padding-bottom: 10px; margin-bottom: 20px;}
+		footer{background-color: #222222; color:#9d9d9d; padding: 10px; margin-top: 10px;}
 	</style>
 </head>
 
 <body>
 	<header style="background-color: #222222;">
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About us</a></li>
-				<li><a href="#">Service</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+<nav>
+	<ul>
+		<li class="navList"><a href="#" class="anchor">Home</a></li>
+		<li class="navList"><a href="#" class="anchor">About us</a></li>
+		<li class="navList"><a href="#" class="anchor">Service</a></li>
+		<li class="navList"><a href="#" class="anchor">Contact</a></li>
+	</ul>
+</nav>
+</header>
 
-    <section>
-		<aside>
-		  <h4>Epcot Center</h4>
-		  <p>The Epcot Center is a theme park in Disney World, Florida.</p>
-		</aside>
-		
-		<section>
-			<article>
-			  <header>
-				<h1>Most important heading here</h1>
-				<h3>Less important heading here</h3>
-				<p>Some additional information here</p>
-			  </header>
-			  <p>Lorem Ipsum dolor set amet....</p>
-			</article>
-		</section>
-		
-		<section>
-			<table border="1">
-			  <caption>Table Caption</caption>
-			  <tr>
-				<th>Firstname</th>
-				<th>Lastname</th> 
-			  </tr>
-			  <tr>
-				<td>Jill</td>
-				<td>Smith</td>
-			  </tr>
-			  <tr>
-				<td colspan="2">Eve Jackson</td>
-			  </tr>
-			  <tr>
-				<td>John</td>
-				<td>Doe</td>
-			  </tr>
+<section id="container">
+	<aside id="sideBar">
+		<h4>A LITTLE ABOUT US</h4>
+		<p>We’re a bunch of restless and curious, creative, smart and passionate people looking to reimagine what is possible when
+			technology and story meet.</p>
+
+		<br/>
+	</aside>
+
+	<section id="contentCntr">
+
+		<article>
+			<header>
+				<h1>Welcome to sapient</h1>
+				<p>Sapient Global markets</p>
+			</header>
+		</article>
+
+		<section class="tableWrapper">
+			<table border="1" cellspacing="0" cellpadding="50">
+				<caption>Table Caption</caption>
+				<tr>
+					<th class="tableCell tableHeader">Firstname</th>
+					<th class="tableCell tableHeader">Lastname</th>
+				</tr>
+				<tr>
+					<td class="tableCell">Jill</td>
+					<td class="tableCell">Smith</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="tableCell">Eve Jackson</td>
+				</tr>
+				<tr>
+					<td class="tableCell">John</td>
+					<td class="tableCell">Doe</td>
+				</tr>
 			</table>
 		</section>
-		
+
 		<section>
-			<form>
+			<form action="form.php">
 				<header>
 					<h2>Employment Application</h2>
 				</header>
 
-				<label>Your Name</label>
-				<input type="text" />
-				
+				<label>First Name</label>
+				<input type="text" required autofocus/>
+
+				<label>Middle Name</label>
+				<input type="text" disabled/>
+
+				<label>Last Name</label>
+				<input type="text" value="Sharma" readonly/>
+
+				<label>Designation</label>
+				<input type="text" value="Engi" max="4" />
+
+				<label>Age</label>
+				<input type="number" value="25" min="20" max="50" step="5" />
+
 				<label>
-					Which position are you applying for?
-				</label>
+						Which position are you applying for?
+					</label>
 
 				<select>
-					<option value="Interface Designer">
-						Interface Designer
-					</option>
-					<option value="Software Engineer">
-						Software Engineer
-					</option>
-					<option value="System Administrator">
-						System Administrator
-					</option>
-					<option value="Office Manager">
-						Office Manager
-					</option>
-				</select>
-				
+						<option value="Interface Designer">
+							Interface Designer
+						</option>
+						<option value="Software Engineer">
+							Software Engineer
+						</option>
+						<option value="System Administrator">
+							System Administrator
+						</option>
+						<option value="Office Manager">
+							Office Manager
+						</option>
+					</select>
+
 				<fieldset>
 					<legend>
 						Are you willing to relocate?
-						<span id="req_19" class="req">*</span>
+						<span class="req">*</span>
 					</legend>
-					<input type="radio" class="field radio" value="Yes" >
+					<input type="radio" class="field radio" value="Yes">
 					<label>Yes</label>
-					<input type="radio" class="field radio" value="No" >
+					<input type="radio" class="field radio" value="No">
 					<label>No</label>
 				</fieldset>
-					
+
 				<label>Attach a Copy of Your Resume</label>
 				<input type="file">
-					
-				<textarea rows="10" cols="30"></textarea>
 
-				<input type="submit" value="Submit" />
-				
+				<textarea></textarea>
+
+				<button>Submit</button>
 			</form>
 		</section>
+
 	</section>
-	
-	<footer>
-	  <p>Footer Text</p>
-	</footer>
+</section>
+
+<footer>
+	<p>Footer Text</p>
+</footer>
 </body>
 
 </html>
