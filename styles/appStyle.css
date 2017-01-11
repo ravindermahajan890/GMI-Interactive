@@ -20,6 +20,11 @@
 		#container > section {
 		    border-left: 1px solid #ccc;
 		}
+		header h1 {
+			transform: scale(0.9);
+			//transform: rotateZ(180deg);
+			//transform: skewX(50deg);
+		}
 		header .profile {
 			float: right;
 			border-radius: 25px;
@@ -81,7 +86,7 @@
 		    //border: 10px solid #ccc;
 		    //border-image: url(http://www.w3schools.com/css/border.png) 30 round;
 
-		    box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.2);
+		    //box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.2);
 		    //box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.2), 4px 4px 5px red;
 		}
 		.tableWrapper table caption {
