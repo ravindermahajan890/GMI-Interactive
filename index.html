@@ -2,11 +2,17 @@
 <html>
 
 <head>
-    <title>Page Title</title>
+    <title>Sapient GMI</title>
+	
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+	<style>
+		h1 {color: #00959e;}
+	</style>
 </head>
 
 <body>
-	<header>
+	<header style="background-color: #222222;">
 		<nav>
 			<ul>
 				<li><a href="#">Home</a></li>
@@ -56,63 +62,52 @@
 		</section>
 		
 		<section>
-			<form action="form.php">
-					<header>
-						<h2>Employment Application</h2>
-					</header>
+			<form>
+				<header>
+					<h2>Employment Application</h2>
+				</header>
 
-					<label>First Name</label>
-					<input type="text" required autofocus placeholder="Please enter your name"/>
-					
-					<label>Middle Name</label>
-					<input type="text" disabled/>
-					
-					<label>Last Name</label>
-					<input type="text" value="Sharma" readonly/>
-					
-					<label>Designation</label>
-					<input type="text" value="Engi" max="4"/>
-					
-					<label>Age</label>
-					<input type="number" value="25" min="20" max="50" step="5"/>
-					
-					<label>
-						Which position are you applying for?
-					</label>
+				<label>Your Name</label>
+				<input type="text" />
+				
+				<label>
+					Which position are you applying for?
+				</label>
 
-					<select>
-						<option value="Interface Designer">
-							Interface Designer
-						</option>
-						<option value="Software Engineer">
-							Software Engineer
-						</option>
-						<option value="System Administrator">
-							System Administrator
-						</option>
-						<option value="Office Manager">
-							Office Manager
-						</option>
-					</select>
+				<select>
+					<option value="Interface Designer">
+						Interface Designer
+					</option>
+					<option value="Software Engineer">
+						Software Engineer
+					</option>
+					<option value="System Administrator">
+						System Administrator
+					</option>
+					<option value="Office Manager">
+						Office Manager
+					</option>
+				</select>
+				
+				<fieldset>
+					<legend>
+						Are you willing to relocate?
+						<span id="req_19" class="req">*</span>
+					</legend>
+					<input type="radio" class="field radio" value="Yes" >
+					<label>Yes</label>
+					<input type="radio" class="field radio" value="No" >
+					<label>No</label>
+				</fieldset>
 					
-					<fieldset>
-						<legend>
-							Are you willing to relocate?
-							<span class="req">*</span>
-						</legend>
-						<input type="radio" class="field radio" value="Yes" >
-						<label>Yes</label>
-						<input type="radio" class="field radio" value="No" >
-						<label>No</label>
-					</fieldset>
-						
-					<label>Attach a Copy of Your Resume</label>
-					<input type="file">
+				<label>Attach a Copy of Your Resume</label>
+				<input type="file">
 					
-					<textarea></textarea>
+				<textarea rows="10" cols="30"></textarea>
 
-					<button>Submit</button>
-				</form>
+				<input type="submit" value="Submit" />
+				
+			</form>
 		</section>
 	</section>
 	
