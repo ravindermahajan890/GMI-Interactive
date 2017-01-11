@@ -69,6 +69,12 @@
 		    border-left: 1px solid #ccc;
 		    width: 100%;
 		    background: #fff;
+
+		    /* border */
+		    //border-radius: 5px 50px 5px 50px;
+		    border-radius: 10px;
+		    //border: 10px solid #ccc;
+		    //border-image: url(http://www.w3schools.com/css/border.png) 30 round;
 		}
 		.tableWrapper table caption {
 		    background: #ccc;
@@ -88,6 +94,16 @@
 		form {
 		    border: 1px solid #ccc;
 		    padding: 10px;
+
+		    /* background */
+		    //background-image: url(http://www.wallpapertycoon.com/wp-content/uploads/2016/02/beach_bridge_sunset_nature_wallpaper_hd-500x375.jpg), url(http://kingofwallpapers.com/sky/sky-003.jpg);
+		    //background-position: right bottom, left top;
+    		//background-repeat: no-repeat, repeat;
+
+    		//background: url(http://www.wallpapertycoon.com/wp-content/uploads/2016/02/beach_bridge_sunset_nature_wallpaper_hd-500x375.jpg) right bottom no-repeat, url(http://kingofwallpapers.com/sky/sky-003.jpg) right bottom repeat-x;
+
+    		//background-size: cover;
+    		//background-size: 100px 80px;
 		}
 		form fieldset {
 		    padding: 15px;
