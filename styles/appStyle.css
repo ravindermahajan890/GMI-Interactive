@@ -80,6 +80,9 @@
 		    border-radius: 10px;
 		    //border: 10px solid #ccc;
 		    //border-image: url(http://www.w3schools.com/css/border.png) 30 round;
+
+		    box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.2);
+		    //box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.2), 4px 4px 5px red;
 		}
 		.tableWrapper table caption {
 		    background: #ccc;
@@ -117,11 +120,11 @@
 
 
     		/* gradient */
-    		background: #7baeb4; /* For browsers that do not support gradients */
-		    background: -webkit-linear-gradient(#7baeb4, #fff); /* For Safari 5.1 to 6.0 */
-		    background: -o-linear-gradient(#7baeb4, #fff); /* For Opera 11.1 to 12.0 */
-		    background: -moz-linear-gradient(#7baeb4, #fff); /* For Firefox 3.6 to 15 */
-		    background: linear-gradient(#7baeb4, #fff); /* Standard syntax */
+    		//background: #7baeb4; /* For browsers that do not support gradients */
+		    //background: -webkit-linear-gradient(#7baeb4, #fff); /* For Safari 5.1 to 6.0 */
+		    //background: -o-linear-gradient(#7baeb4, #fff); /* For Opera 11.1 to 12.0 */
+		    //background: -moz-linear-gradient(#7baeb4, #fff); /* For Firefox 3.6 to 15 */
+		    //background: linear-gradient(#7baeb4, #fff); /* Standard syntax */
 
 
 		    /* gradient direction */
@@ -175,6 +178,8 @@
 		}
 		h4 {
 		    font-size: 18px;
+		    text-shadow: 5px 5px 2px #ccc;
+		    //text-shadow: 5px 5px 2px #ccc, 0 0 5px #0000FF;
 		}
 		footer {
 		    background-color: #222222;
