@@ -1,2 +1,8 @@
 # GMI-Interactive
-GMI Training
+
+##npm install -g grunt-cli
+
+##npm install
+
+## scss
+  --  grunt
