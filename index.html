@@ -4,101 +4,96 @@
 <head>
 	<title>Sapient GMI</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styles/appStyle.css">
+	<link rel="stylesheet" type="text/css" href="styles/app.css">
 </head>
 
 <body>
 
-<header style="background-color: #222222;" id="topBar">
-	<img src="https://res.cloudinary.com/crunchbase-production/image/upload/v1455818025/merbw9euj2b1gojnn2h5.jpg" alt="" height="50" class="profile" /> 
-	<nav>
+<header style="background-color: #222222;" id="topBar" class="header">
+	<img src="https://res.cloudinary.com/crunchbase-production/image/upload/v1455818025/merbw9euj2b1gojnn2h5.jpg" alt="" height="50" class="header__profile" /> 
+	<nav class="navigation">
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About us</a></li>
-			<li><a href="#">Service</a></li>
-			<li><a href="#">Contact</a></li>
+			<li class="navigation__list"><a href="#" class="navigation__link navigation__link--active">Home</a></li>
+			<li class="navigation__list"><a href="#" class="navigation__link">About us</a></li>
+			<li class="navigation__list"><a href="#" class="navigation__link">Service</a></li>
+			<li class="navigation__list"><a href="#" class="navigation__link">Contact</a></li>
 		</ul>
 	</nav>
 </header>
 
-<section id="container">
+<section class="container">
 
-	<aside id="sideBar">
+	<aside class="sideBar">
 
-		<article>
+		<article class="article">
 			<header>
-				<h1>Welcome to sapient</h1>
+				<h1 class="h1">Welcome to sapient</h1>
 				<p>Sapient Global markets</p>
 			</header>
 		</article>
-		
-		<h4>A LITTLE ABOUT US</h4>
+
+		<h4 class="h4">A LITTLE ABOUT US</h4>
 		<p>We’re a bunch of restless and curious, creative, smart and passionate people looking to reimagine what is possible when
 			technology and story meet.</p>
 
 		<br/>
-		<img src="http://assets.sapientnitro.com/content/dam/sapientnitro/culture/globaloffices/north-america/portland/sliced_perspective_overviewImag.jpg/_jcr_content/renditions/desktop.jpg"
-			alt="image">
+		<img src="http://assets.sapientnitro.com/content/dam/sapientnitro/culture/globaloffices/north-america/portland/sliced_perspective_overviewImag.jpg/_jcr_content/renditions/desktop.jpg" alt="image" class="img">
 
 	</aside>
 
-	<section id="contentCntr">
-
-
+	<section class="contentCntr">
 
 		<article>
 			<header>
-				<h1>Welcome to sapient</h1>
+				<h1 class="h1">Welcome to sapient</h1>
 				<p>Sapient Global markets</p>
 			</header>
 		</article>
 
 		<section class="tableWrapper">
-			<table cellspacing="0" cellpadding="50">
+			<table cellspacing="0" cellpadding="50" class="table">
 				<tr>
-					<th class="tableCell tableHeader">Firstname</th>
-					<th class="tableCell tableHeader">Lastname</th>
+					<th class="table__tableHeader">Firstname</th>
+					<th class="table__tableHeader">Lastname</th>
 				</tr>
 				<tr>
-					<td class="tableCell">Jill</td>
-					<td class="tableCell">Smith</td>
+					<td class="table__tableCell table__tableCell--active">Jill</td>
+					<td class="table__tableCell table__tableCell--active">Smith</td>
 				</tr>
 				<tr>
-					<td colspan="2" class="tableCell">Eve Jackson</td>
+					<td colspan="2" class="table__tableCell">Eve Jackson</td>
 				</tr>
 				<tr>
-					<td class="tableCell">John</td>
-					<td class="tableCell">Doe</td>
+					<td class="table__tableCell">John</td>
+					<td class="table__tableCell">Doe</td>
 				</tr>
 			</table>
 		</section>
 
 		<section>
-			<form action="form.php">
+			<form action="form.php" class="form">
 				<header>
-					<h2>Employment Application</h2>
+					<h2 class="h2">Employment Application</h2>
 				</header>
 
-				<label>First Name</label>
-				<input type="text" required autofocus/>
+				<label class="label">First Name</label>
+				<input class="input" type="text" required autofocus/>
 
-				<label>Middle Name</label>
-				<input type="text" disabled/>
+				<label class="label">Middle Name</label>
+				<input class="input" type="text" disabled/>
 
-				<label>Last Name</label>
-				<input type="text" value="Sharma" readonly/>
+				<label class="label">Last Name</label>
+				<input class="input" type="text" value="Sharma" readonly/>
 
-				<label>Designation</label>
-				<input type="text" value="Engi" max="4" />
+				<label class="label">Designation</label>
+				<input class="input" type="text" value="Engi" max="4" />
 
-				<label>Age</label>
-				<input type="number" value="25" min="20" max="50" step="5" />
+				<label class="label">Age</label>
+				<input class="input" type="number" value="25" min="20" max="50" step="5" />
 
-				<label>
-						Which position are you applying for?
-					</label>
+				<label class="label">Which position are you applying for?</label>
 
-				<select>
+				<select class="select">
 						<option value="Interface Designer">
 							Interface Designer
 						</option>
@@ -113,21 +108,22 @@
 						</option>
 					</select>
 
-				<fieldset>
-					<legend>
+				<fieldset class="fieldset">
+					<legend class="legend">
 						Are you willing to relocate?
 						<span class="req">*</span>
 					</legend>
 					<input type="radio" class="field radio" value="Yes">
-					<label>Yes</label>
+					<label class="label">Yes</label>
 					<input type="radio" class="field radio" value="No">
-					<label>No</label>
+					<label class="label">No</label>
 				</fieldset>
 
-				<label>Attach a Copy of Your Resume</label>
-				<input type="file">
+				<label class="label">Attach a Copy of Your Resume</label>
 
-				<textarea></textarea>
+				<input class="input" type="file">
+
+				<textarea class="textarea"></textarea>
 
 				<button>Submit</button>
 			</form>
@@ -136,9 +132,9 @@
 	</section>
 </section>
 
-<div class="help"><a href="#topBar">Top</a></div>
+<div class="help"><a href="#topBar" class="help__link">Top</a></div>
 
-<footer>
+<footer class="footer">
 	<p>Footer Text</p>
 </footer>
 </body>
