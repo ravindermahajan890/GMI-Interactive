@@ -20,6 +20,11 @@
 		#container > section {
 		    border-left: 1px solid #ccc;
 		}
+		header .profile {
+			float: right;
+			border-radius: 25px;
+			margin: 5px 10px 0px 0px
+		}
 		#sideBar {
 		    width: 20%;
 		    float: left;
