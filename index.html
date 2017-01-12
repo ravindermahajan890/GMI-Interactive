@@ -4,13 +4,18 @@
 <head>
 	<title>Sapient GMI</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="styles/app.css">
 </head>
 
 <body>
 
-<header style="background-color: #222222;" id="topBar" class="header">
-	<img src="https://res.cloudinary.com/crunchbase-production/image/upload/v1455818025/merbw9euj2b1gojnn2h5.jpg" alt="" height="50" class="header__profile" /> 
+<header id="topBar" class="header">
+	<img src="https://res.cloudinary.com/crunchbase-production/image/upload/v1455818025/merbw9euj2b1gojnn2h5.jpg" alt="" height="50" class="header__profile img-circle pull-right" />
 	<nav class="navigation">
 		<ul>
 			<li class="navigation__list"><a href="#" class="navigation__link navigation__link--active">Home</a></li>
@@ -21,9 +26,9 @@
 	</nav>
 </header>
 
-<section class="container">
+<section class="container-fluid">
 
-	<aside class="sideBar">
+	<aside class="sideBar col-md-3 col-sm-12">
 
 		<article class="article">
 			<header>
@@ -37,11 +42,11 @@
 			technology and story meet.</p>
 
 		<br/>
-		<img src="http://assets.sapientnitro.com/content/dam/sapientnitro/culture/globaloffices/north-america/portland/sliced_perspective_overviewImag.jpg/_jcr_content/renditions/desktop.jpg" alt="image" class="img">
+		<img src="http://assets.sapientnitro.com/content/dam/sapientnitro/culture/globaloffices/north-america/portland/sliced_perspective_overviewImag.jpg/_jcr_content/renditions/desktop.jpg" alt="image" class="img-responsive hidden-sm">
 
 	</aside>
 
-	<section class="contentCntr">
+	<section class="contentCntr col-md-9 col-sm-12">
 
 		<article>
 			<header>
@@ -50,82 +55,114 @@
 			</header>
 		</article>
 
-		<section class="tableWrapper">
-			<table cellspacing="0" cellpadding="50" class="table">
+		<section class="table-responsive">
+			<table cellspacing="0" cellpadding="50" class="table table-hover">
 				<tr>
-					<th class="table__tableHeader">Firstname</th>
-					<th class="table__tableHeader">Lastname</th>
+					<th>Firstname</th>
+					<th>Lastname</th>
 				</tr>
 				<tr>
-					<td class="table__tableCell table__tableCell--active">Jill</td>
-					<td class="table__tableCell table__tableCell--active">Smith</td>
+					<td>Jill</td>
+					<td>Smith</td>
 				</tr>
 				<tr>
-					<td colspan="2" class="table__tableCell">Eve Jackson</td>
+					<td colspan="2">Eve Jackson</td>
 				</tr>
 				<tr>
-					<td class="table__tableCell">John</td>
-					<td class="table__tableCell">Doe</td>
+					<td>John</td>
+					<td>Doe</td>
 				</tr>
 			</table>
 		</section>
 
 		<section>
-			<form action="form.php" class="form">
+			<form action="form.php" class="form-horizontal">
 				<header>
 					<h2 class="h2">Employment Application</h2>
 				</header>
 
-				<label class="label">First Name</label>
-				<input class="input" type="text" required autofocus/>
+				
+				<div class="form-group">
+					<label class="control-label col-md-2">First Name</label>
+					<div class="col-md-10 col-sm-12">
+						<input class="form-control" type="text" required autofocus/>
+					</div>
+				</div>
 
-				<label class="label">Middle Name</label>
-				<input class="input" type="text" disabled/>
+				<div class="form-group">
+					<label class="control-label col-md-2">Middle Name</label>
+					<div class="col-md-10 col-sm-12">
+						<input class="form-control" type="text" disabled/>
+					</div>
+				</div>
 
-				<label class="label">Last Name</label>
-				<input class="input" type="text" value="Sharma" readonly/>
+				<div class="form-group">
+					<label class="control-label col-md-2">Last Name</label>
+					<div class="col-md-10 col-sm-12">
+						<input class="form-control" type="text" value="Sharma" readonly/>
+					</div>
+				</div>
 
-				<label class="label">Designation</label>
-				<input class="input" type="text" value="Engi" max="4" />
+				<div class="form-group">
+					<label class="control-label col-md-2">Designation</label>
+					<div class="col-md-10 col-sm-12">
+						<input class="form-control" type="text" value="Engi" max="4" />
+					</div>
+				</div>
 
-				<label class="label">Age</label>
-				<input class="input" type="number" value="25" min="20" max="50" step="5" />
+				<div class="form-group">
+					<label class="control-label col-md-2">Age</label>
+					<div class="col-md-10 col-sm-12">
+						<input class="form-control" type="number" value="25" min="20" max="50" step="5" />
+					</div>
+				</div>
 
-				<label class="label">Which position are you applying for?</label>
+				<div class="form-group">
+					<label class="control-label col-md-2">Which position are you applying for?</label>
+					<div class="col-md-10 col-sm-12">
+						<select class="form-control">
+							<option value="Interface Designer">
+								Interface Designer
+							</option>
+							<option value="Software Engineer">
+								Software Engineer
+							</option>
+							<option value="System Administrator">
+								System Administrator
+							</option>
+							<option value="Office Manager">
+								Office Manager
+							</option>
+						</select>
+					</div>
+				</div>
 
-				<select class="select">
-						<option value="Interface Designer">
-							Interface Designer
-						</option>
-						<option value="Software Engineer">
-							Software Engineer
-						</option>
-						<option value="System Administrator">
-							System Administrator
-						</option>
-						<option value="Office Manager">
-							Office Manager
-						</option>
-					</select>
-
-				<fieldset class="fieldset">
+				<!--<fieldset class="fieldset">
 					<legend class="legend">
 						Are you willing to relocate?
 						<span class="req">*</span>
 					</legend>
-					<input type="radio" class="field radio" value="Yes">
-					<label class="label">Yes</label>
-					<input type="radio" class="field radio" value="No">
-					<label class="label">No</label>
-				</fieldset>
+					<label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+					<label class="radio-inline"><input type="radio" name="optradio">No</label>
+				</fieldset>-->
 
-				<label class="label">Attach a Copy of Your Resume</label>
+				<div class="form-group">
+					<label class="control-label col-md-2">Attach a Copy of Your Resume</label>
+					<div class="col-md-10 col-sm-12">
+						<span class="btn btn-file"><input type="file" /></span>
+					</div>
+				</div>
 
-				<input class="input" type="file">
+				<div class="form-group">
+					<label class="control-label col-md-2">Text Area</label>
+					<div class="col-md-10 col-sm-12">
+						<textarea class="form-control"></textarea>
+					</div>
+				</div>
 
-				<textarea class="textarea"></textarea>
-
-				<button>Submit</button>
+				<div class="form-group pull-right">
+					<button>Submit</button>
+				</div>
 			</form>
 		</section>
 
