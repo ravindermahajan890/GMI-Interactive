@@ -1,0 +1,191 @@
+@import 'variable.scss';
+@import 'font.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $body-background;
+    font-size: $base-font-size;
+    .header {
+        .navigation {
+            padding: 22px;
+            margin-bottom: 50px;
+            height: 60px;
+            &__list {
+                display: inline;
+                padding: 0px 10px;
+            }
+            &__link {
+                color: $link-color;
+                text-decoration: none;
+                &--active {
+                    color: $link-active-color;
+                }
+            }
+        }
+        &__profile {
+            float: right;
+            border-radius: 25px;
+            margin: 5px 10px 0px 0px
+        }
+    }
+    .help {
+        position: fixed;
+        right: 12px;
+        background: blue;
+        padding: 5px 10px;
+        bottom: 10px;
+        &__link {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    .container {
+        overflow: hidden;
+
+        & > section {
+            border-left: 1px solid #ccc;
+        }
+        .sideBar {
+            width: 20%;
+            float: left;
+            padding: 1%;
+            max-height: 200px;
+            height: 100%;
+            border-right: 1px solid #ccc;
+            .img {
+                width: 100%;
+            }
+            .article {
+                display: none;
+            }
+        }
+        .contentCntr {
+            width: 80%;
+            float: right;
+            padding: 1%;
+            padding-left: 2%;
+        }
+        .tableWrapper {
+            padding: 15px 0px;
+
+            .table {
+                border-top: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+                width: 100%;
+                background: #fff;
+
+                &__tableHeader {
+                    padding: 10px;
+                    border-right: 1px solid #ccc;
+                    border-bottom: 2px solid #ccc;
+                    text-align: left;
+                }
+                &__tableCell {
+                    padding: 10px;
+                    border-right: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                    &--active {
+                        background: $body-background;
+                    }
+                }
+            }
+        }
+        .form {
+            border: 1px solid #ccc;
+            padding: 10px;
+            .fieldset {
+                padding: 15px;
+                margin-bottom: 10px;
+                .legend {
+                    background: #f2f2f2;
+                }
+            }
+            > .label {
+                display: block;
+                padding-bottom: 10px;
+            }
+            > .input,
+            .select,
+            .textarea {
+                margin-bottom: 10px;
+                border: 1px solid #a9a9a9;
+            }
+            > .textarea {
+                width: 300px;
+                height: 100px;
+                display: block;
+            }
+        }
+        .h1, .h2, .h3, .h4 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .h1 {
+            font-size: 36px;
+            font-family: sapientFont;
+        }
+        .h2 {
+            font-size: 30px;
+            font-family: sapientFontBold;
+        }
+        .h3 {
+            font-size: 24px;
+        }
+        .h4 {
+            font-size: 18px;
+            text-shadow: 5px 5px 2px #ccc;
+            //text-shadow: 5px 5px 2px #ccc, 0 0 5px #0000FF;
+        }
+    }
+}
+
+.footer {
+    background-color: #222222;
+    color: $link-color;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        .container {
+            .sideBar {
+                width: 100%;
+                float: none;
+                height: auto;
+                min-height: 250px;
+                .img {
+                    display: none;
+                }
+                .article {
+                    display: block;
+                    margin-bottom: 50px;
+                }
+            }
+            .contentCntr {
+                width: 100%;
+                float: none;
+                padding: 1%;
+
+                .article {
+                    display: none;
+                }
+                .form > .input, 
+                .form .select, 
+                .form .textarea {
+                    width: 100%;
+                }
+                .form > .input, 
+                .form .select {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
