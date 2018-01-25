@@ -10,5 +10,7 @@ run the command npm install -g grunt-cli
 
 npm install
 
-## Run the sass compiler and watcher
+## Run the sass compiler and watcher.
 grunt
+
+
